@@ -3,10 +3,10 @@ import RPi.GPIO as GPIO
 import time
 
 #Define row pins to RPi (4 left most pins)
-R1 = 5 
-R2 = 6
-R3 = 13
-R4 = 19
+R1 = 6
+R2 = 13
+R3 = 19
+R4 = 26
 
 # Define column pins ti RPi (4 right mos pins)
 C1 = 12
@@ -30,7 +30,7 @@ GPIO.setup(C4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 keypad_pressed = -1 # set to channel if pressed
 
-password = "1234#"
+password = "1436#"
 
 input_str = ""
 
