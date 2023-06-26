@@ -1,0 +1,11 @@
+# install virtual env pytho library
+sudo apt-get install python3-venv
+
+# create an env called project_env
+python3 -m venv projct_env
+
+# insatll library for python
+pip install -r requirements.txt
+
+# Insall opencv for python
+sudo apt-get install python3-opencv
