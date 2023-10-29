@@ -1,0 +1,23 @@
+Terminal - 1
+    mosquitto -v 
+        ps -ef | grep mosquitto
+        sudo kill 599
+-------------------------
+Terminal - 2
+    cd /Documents/RTS_System
+    python subscriber.py
+-------------------------
+Terminal - 3
+    cd /Documents/RTS_System
+    python rts.py
+------------------------
+Terminal - 4 (optional)
+    mysql -u root -p 
+    > root
+
+    show databases;
+    use rts_db;
+
+    show tables;
+
+    select * from <table>;

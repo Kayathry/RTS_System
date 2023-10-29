@@ -1,0 +1,32 @@
+create DATABASE rts_db;
+
+USE rts_db;
+
+CREATE TABLE image_recog_details(
+ image_id int auto_increment,
+ recognized_at varchar(255),
+ image_url varchar(255),
+ name varchar(255),
+ recognized_as varchar(255),
+ primary key(image_id)
+);
+
+CREATE TABLE credentials(
+ user_id int auto_increment,
+ name varchar(255),
+ password varchar(255),
+ primary key(user_id)
+);
+
+CREATE TABLE verification_details(
+ id int auto_increment,
+ user_id varchar(255),
+ verified_at varchar(255),
+ is_verified varchar(255),
+ primary key(id)
+);
+
+SHOW COLUMNS from rts_db.credentials;
+
+SHOW COLUMNS from rts_db.image_details;
+
